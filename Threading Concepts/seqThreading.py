@@ -17,7 +17,7 @@ func2Thread = threading.Thread(target=func2, args=(3, 5));
 
 #running functions using thread;
 func1Thread.start();
-func1Thread.join();  # This join function tell that 1st run this thread and let other thread to wait, sequence execution;
+func1Thread.join();  # This join function tell that 1st run this thread and let other thread to wait, sequence execution; in this case the func1Thread run 1st after that func2Thrad start executing;
 
 func2Thread.start();
 func2Thread.join();
